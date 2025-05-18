@@ -27,7 +27,6 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",  # Local development
         "https://localhost:3000",  # Local development with HTTPS
-        "http://myunihealth.app",
         "https://myunihealth.app",  # Production domain
         "https://www.myunihealth.app",  # Production domain with www
         "https://*.vercel.app",  # Vercel preview deployments
