@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 load_dotenv('../.env.local')
 
 # Configure the API
+if os.path.exists('../.env.local'):
+    load_dotenv('../.env.local')
+
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY not found in environment variables")
